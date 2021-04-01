@@ -1,0 +1,48 @@
+{
+  "name": "curama-server-planner",
+  "code_name": "planner",
+  "version": "1.0.0",
+  "description": "CURAMA-planner server part.",
+  "port": "8081",
+  "gatewayUrl": "http://localhost:8080",
+  "dataBase": {
+    "engine": "mongodb",
+    "name": "db-curama-planner",
+    "host": "mongodb://localhost:27017/db-curama-planner"
+  },
+  "components": [
+    {
+      "name": "link",
+      "fields": {
+        "title": "String",
+        "url": "String",
+        "description": "String",
+        "createdDate": "Date"
+      }
+    }, {
+      "name": "groupLink",
+      "fields": {
+        "name": "String",
+        "color": "String"
+      }
+    }, {
+      "name": "task",
+      "fields": {
+        "title": "String",
+        "text": "String",
+        "tags": "Array",
+        "attachedFiles": "Array",
+        "checkList": "Array",
+        "isFavorites": "Boolean",
+        "color": "String",
+        "isArchive": "Boolean",
+        "deadline": "Date",
+        "isDone": "Boolean",
+        "isPrompt": "Boolean",
+        "promptDate": "Date",
+        "promptPlace": "String",
+        "promptPeriodicity": "Number"
+      }
+    }
+  ]
+}

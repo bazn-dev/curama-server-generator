@@ -1,0 +1,20 @@
+{
+  "name": "curama-server-generator",
+  "version": "1.0.0",
+  "description": "Generator Curama modules on server part.",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js",
+    "dev": "npx nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Bazhin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cllc": "^1.1.3",
+    "express": "^4.16.2",
+    "mongoose": "^5.3.9",
+    "node-cmd": "^4.0.0"
+  }
+}
